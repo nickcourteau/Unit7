@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Form</title>
+  </head>
+  <style>
+      form {
+          font-family: sans-serif;
+          padding: 15px;
+      }
+      h1 {
+          text-align: center;
+      }
+      label {
+          text-align: left;
+      }
+
+      input[type=text] {
+          width: 100%;
+          padding: 10px 10px;
+          border: 1px solid lightgray;
+          border-radius: 4px;
+          box-sizing: border-box;
+      }
+      input[type=email] {
+          width: 100%;
+          padding: 10px 10px;
+          border: 1px solid lightgray;
+          border-radius: 4px;
+          box-sizing: border-box;
+      }
+      select {
+          width: 100%;
+          padding: 10px 10px;
+          border: 1px solid lightgray;
+          border-radius: 4px;
+          box-sizing: border-box;
+      }
+  </style>
+  <body>
+    <form action="http://www.aptweblab.org/request" method="post">
+    <h1>My Form</h1>
+    <div>
+        <label for="name">Name:</label> </p>
+        <input type="text" id="name" name="user_name">
+    </div>
+    </p>
+    <div>
+        <label for="mail">E-mail:</label> </p>
+        <input type="email" id="mail" name="user_mail">
+    </div>
+      </p>
+    <div>
+        <label for="pet">Favorite Pet:</label> </p>
+        <input type="radio" name="favorite_pet" value="dog">Dog<br>
+        <input type="radio" name="favorite_pet" value="cat">Cat<br>
+        <input type="radio" name="favorite_pet" value="other">Other
+    </div>
+    </p>
+    <div>
+        <label for="icecream">Favorite Ice Cream: </label> </p>
+        <select id="icecream" name="ice_cream">
+            <option value="chocolate">Chocolate</option>
+            <option value="vanilla">Vanilla</option>
+            <option value="coffee">Coffee</option>
+            <option value="salted-caramel">Salted Caramel</option>
+            <option value="chunky-monkey">Chunky Monkey</option>
+        </select>
+    </div>
+    </p>
+    <div>
+        <label for="msg">How Awesome is This Class?</label> </p>
+        <textarea id="msg" name="user_message"></textarea>
+    </div>
+    </p>
+    <div class="button">
+        <button type="submit">Send your message</button>
+    </div>
+
+</form>
+  </body>
+</html>
